@@ -2,7 +2,7 @@
 # Global settings
 [build]
   publish = "www"
-  command = "yarn"
+  command = ""
 
 [context.production]
   [context.production.environment]
