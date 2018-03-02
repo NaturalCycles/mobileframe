@@ -1,0 +1,11 @@
+
+/node_modules
+/bower
+
+/.idea
+/*.log
+/log.txt
+/.sass-cache
+/tmp/*
+!/tmp/.gitkeep
+

@@ -1,0 +1,13 @@
+{
+  "name": "@naturalcycles/mobileframe",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/NaturalCycles/mobileframe.git"
+  },
+  "author": "Kirill Groshkov",
+  "license": "MIT"
+}

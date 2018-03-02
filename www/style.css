@@ -1,0 +1,239 @@
+
+body {
+    margin: 0; padding: 0;
+    width: 100%; height: 100%;
+    background: #ccc;
+    overflow: hidden;
+}
+
+.cf:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.div1 {
+    padding-left: 28px;
+}
+.div1.ipads {
+    padding-left: 76px;
+}
+
+.frame {
+    width: 100%; height: 100%;
+    border: 0;
+}
+
+.contAll {
+    float: left;
+    margin: 20px 32px 0;
+}
+.ipads .contAll {
+    margin: 20px 40px 0;
+}
+
+
+
+.cont1 {
+    position: relative;
+    background: #000;
+    background: url("phone-case.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.screen1 {
+    position: absolute;
+    top: 104px;
+    left: 18px;
+    border: 4px solid #22272d;
+    background-color: white;
+}
+.screen1.sbar {
+    dtop: 124px;
+    dpadding-top: 20px;
+}
+
+.home1 {
+    position: absolute;
+    bottom: 15px;
+    left: 142px;
+    width: 80px; height: 80px;
+    cursor: pointer;
+    //background-color: red;
+}
+
+.cont1,
+[dev=iphone5].cont1 {
+    width: 365px;
+    height: 792px;
+}
+.screen1,
+[dev=iphone5] .screen1 {
+    width: 320px;
+    height: 568px;
+}
+
+[dev=iphone4].contAll {
+    margin-top: 28px;
+}
+[dev=iphone4].cont1 {
+    width: 365px;
+    height: 676px;
+}
+[dev=iphone4] .screen1 {
+    top: 96px;
+    width: 320px;
+    height: 480px;
+}
+
+[dev=iphone6].cont1 {
+    width: 420px;
+    height: 910px;
+}
+[dev=iphone6] .screen1 {
+    width: 375px;
+    height: 667px;
+}
+
+[dev=iphone6p].contAll {
+    margin-top: 0;
+}
+[dev=iphone6p].cont1 {
+    width: 459px;
+    height: 1010px;
+}
+[dev=iphone6p] .screen1 {
+    top: 124px;
+    width: 414px;
+    height: 736px;
+}
+
+[dev=ipad].cont1 {
+    background-image: url("ipad.png");
+    width: 450px;
+    height: 632px;
+}
+[dev=ipad] .screen1 {
+    left: 29px;
+    top: 57px;
+    width: 384px;
+    height: 512px;
+}
+[dev=ipad] .frame {
+    width: 768px;
+    height: 1024px;
+    transform: scale(0.5);
+    transform-origin: top left;
+}
+
+[dev=ipad_l].cont1 {
+    margin-top: 110px;
+    background-image: url("ipad_l.png");
+    width: 632px;
+    height: 450px;
+}
+[dev=ipad_l] .screen1 {
+    left: 56px;
+    top: 29px;
+    width: 512px;
+    height: 384px;
+}
+[dev=ipad_l] .frame {
+    width: 1024px;
+    height: 768px;
+    transform: scale(0.5);
+    transform-origin: top left;
+}
+
+[dev=ipad75].cont1 {
+    background-image: url("ipad.png");
+    width: 672px;
+    height: 946px;
+}
+[dev=ipad75] .screen1 {
+    left: 44px;
+    top: 86px;
+    width: 576px;
+    height: 768px;
+}
+[dev=ipad75] .frame {
+    width: 768px;
+    height: 1024px;
+    transform: scale(0.75);
+    transform-origin: top left;
+}
+[dev=ipad75] .home1 {
+    bottom: 15px;
+    left: 302px;
+    width: 60px; height: 60px;
+}
+
+[dev=ipad_l75].cont1 {
+    margin-top: 160px;
+    background-image: url("ipad_l.png");
+    width: 946px;
+    height: 672px;
+}
+[dev=ipad_l75] .screen1 {
+    left: 84px;
+    top: 44px;
+    width: 768px;
+    height: 576px;
+}
+[dev=ipad_l75] .frame {
+    width: 1024px;
+    height: 768px;
+    transform: scale(0.75);
+    transform-origin: top left;
+}
+[dev=ipad_l75] .home1 {
+    bottom: 305px;
+    left: 12px;
+    width: 60px; height: 60px;
+}
+
+
+
+
+
+
+#sel1 {
+    position: fixed;
+    top: 5px; left: 5px;
+    width: 120px;
+}
+
+.statusbar1 {
+    ddisplay: none;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 20px;
+
+    background: url('statusbar1.png') no-repeat 50% 50%;
+    //background-color: rgba(255,0,0,0.2);
+    background-size: contain;
+    z-index: 10000;
+}
+
+[dev=iphone4] .statusbar1,
+[dev=iphone5] .statusbar1 {
+    top: 2px;
+    height: 17px;
+    background-size: 100% 100%;
+}
+
+[dev=iphone6p] .statusbar1 {
+    top: -1px;
+    height: 22px;
+    background-size: 100% 100%;
+}
+
+
+
+
+.vmiddle {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
